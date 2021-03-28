@@ -1,11 +1,10 @@
 ## TeamViewer
 
-[![](https://images.microbadger.com/badges/image/hilschernetpi/netpi-teamviewer.svg)](https://microbadger.com/images/hilschernetpi/netpi-teamviewer "Teamviewer")
-[![](https://images.microbadger.com/badges/commit/hilschernetpi/netpi-teamviewer.svg)](https://microbadger.com/images/hilschernetpi//netpi-teamviewer "Teamviewer")
-[![Docker Registry](https://img.shields.io/docker/pulls/hilschernetpi/netpi-teamviewer.svg)](https://registry.hub.docker.com/u/hilschernetpi/netpi-teamviewer/)&nbsp;
-[![Image last updated](https://img.shields.io/badge/dynamic/json.svg?url=https://api.microbadger.com/v1/images/hilschernetpi/netpi-teamviewer&label=Image%20last%20updated&query=$.LastUpdated&colorB=007ec6)](http://microbadger.com/images/hilschernetpi/netpi-teamviewer "Image last updated")&nbsp;
-
 Made for [netPI](https://www.netiot.com/netpi/), the Raspberry Pi 3B Architecture based industrial suited Open Edge Connectivity Ecosystem
+
+### Docker repository
+
+https://hub.docker.com/r/hilschernetpi/netPI-teamviewer
 
 ### Debian with TeamViewer
 
@@ -74,12 +73,12 @@ STEP 3. Enter the following parameters under *Containers > + Add Container*
 Parameter | Value | Remark
 :---------|:------ |:------
 *Image* | **hilschernetpi/netpi-teamviewer**
-*Runtime > Env* | *name* **TEAMVIEWER_LICENSE** -> *value* **accept** |
-*Runtime > Env* | *name* **TEAMVIEWER_PASSWD** -> *value* **YOUR PASSWORD** |
+*Adv.con.set. > Env > +add env.var.* | *name* **TEAMVIEWER_LICENSE** -> *value* **accept** |
+*Adv.con.set. > Env > +add env.var.* | *name* **TEAMVIEWER_PASSWD** -> *value* **YOUR PASSWORD** |
 *Restart policy* | **always**
-*Runtime > Devices > +add device* | *Host path* **/dev/tty1** -> *Container path* **/dev/tty1** |
-*Runtime > Devices > +add device* | *Host path* **/dev/fb0** -> *Container path* **/dev/fb0** | 
-*Runtime > Privileged mode* | **On** |
+*Adv.con.set. > Devices > +add device* | *Host path* **/dev/tty1** -> *Container path* **/dev/tty1** |
+*Adv.con.set. > Devices > +add device* | *Host path* **/dev/fb0** -> *Container path* **/dev/fb0** | 
+*Adv.con.set. > Privileged mode* | **On** |
 
 STEP 4. Press the button *Actions > Start/Deploy container*
 
