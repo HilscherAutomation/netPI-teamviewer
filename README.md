@@ -4,7 +4,7 @@ Made for [netPI](https://www.netiot.com/netpi/), the Raspberry Pi 3B Architectur
 
 ### Docker repository
 
-https://hub.docker.com/r/hilschernetpi/netPI-teamviewer
+https://hub.docker.com/r/hilschernetpi/netpi-teamviewer
 
 ### Debian with TeamViewer
 
